@@ -1,161 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link href="style2.css" rel="stylesheet">
-        <title>Personal Portfolio Website</title> 
-        <link rel="preconnect" href="https://fonts.googleapis.com/">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" >
-       
-    </head>
-    <body>
-            <header class="header">
-                <a href="#" class="logo">Vrinda Devadas</a>
-    
-                <nav class="navbar">
-                    <a href="#home" class=" active-link"  >Home</a>
-                    <a href ="#about" >About Me</a>
-                    <a href ="#projects" >Projects</a>
-                     <a href ="#contact" >Contact</a>
-                
-                </nav>
-            </header>
-    
-            <section class="home" id="home">
-                <div class="home-content">
-                    <h1>Hello, <span class="gradient">Im Vrinda Welcome</span> To My Page!</h1>
-                    <p>I'm a Computer Science Engineering student and an aspiring Front-End Developer/UI UX Designer.</p>
-                </div>
-                <div class="container">
-                    <img width="300" height="auto" src= "public\img2.jpeg">
-                </div>
-            </section>
-            
-            <section class="about " id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="about-col-1">
-                            <h3 class="sub-title">About Me</h3>   
-                            <p> Hello, I'm Vrinda Devadas, Based in India, New Delhi. I'm currently pursuing Computer Science Engineering (3rd year). I'm a passionate Front-End Developer/Designer , currently learning
-                                UI/UX Design. 
-                            </p>
-                            <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                                <p class="tab-links " onclick="opentab('academics')">Academics</p>
-                            </div>
-                            <div class="tab-contents active-tab" id="skills">
-                                <ul>
-                                    <li><span>Front-End Web Development - HTML, CSS, Javascript</span></li>
-                                    <li><span> Frameworks - Bootstrap , Sass, React Js (Beginner) </span></li>
-                                    <li><span>Python Programming (Intermediate Level)</span></li>
-                            </div>
-                            <div class="tab-contents" id="academics">
-                                <ul>
-                                    <li><span>Ryan International School , New Delhi</span></li>
-                                    <li><span>2020</span><br> Grade 10 percentage:  89.2%</li>
-                                    <li><span>2022</span><br> Grade 12 percentage:  79.8%</li>
-    
-                                    <li><span>VIT Bhopal University</span></li>
-                                    <li> CGPA : 7.98 (current)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="about-col-2">
-                            <video src="public/mygif.mp4" autoplay loop muted></video>
-                        </div>
-                       
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="style2.css" rel="stylesheet">
+    <title>Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Vrinda Devadas</a>
+
+        <nav class="navbar">
+            <a href="#home" class=" active-link">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, <span class="gradient">Im Vrinda Welcome</span> To My Page!</h1>
+            <p>I'm a Computer Science Engineering student and an aspiring Front-End Developer/UI UX Designer.</p>
+        </div>
+        <div class="container">
+            <img width="300" height="auto" src="public\img2.jpeg">
+        </div>
+    </section>
+
+    <section class="about " id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h3 class="sub-title">About Me</h3>
+                    <p> Hello, I'm Vrinda Devadas, Based in India, New Delhi. I'm currently pursuing Computer Science
+                        Engineering (Final year). I'm a passionate Front-End Developer/Designer , currently learning
+                        UI/UX Design.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('academics')">Academics</p>
                     </div>
-                </div> 
-                <script>
-    
-                    var tablinks = document.getElementsByClassName("tab-links");
-                    var tabcontents = document.getElementsByClassName("tab-contents");
-    
-                    function opentab(tabname){
-                        for(tablink of tablinks){
-                            tablink.classList.remove("active-link");
-                        }
-                        for(tabcontent of tabcontents){
-                            tabcontent.classList.remove("active-tab");
-                        }
-                        event.currentTarget.classList.add("active-link");
-                        document.getElementById(tabname).classList.add("active-tab");
-                    }
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Web Development - HTML, CSS, Javascript</span></li>
+                            <li><span> Frameworks - Bootstrap , React Js </span></li>
+                            <li><span>Python Programming (Intermediate Level)</span></li>
+                            <li><span>Developer Tools - VS Code, Figma, WordPress</span></li>
+                    </div>
+                    <div class="tab-contents" id="academics">
+                        <ul>
+                            <li><span>Ryan International School , New Delhi</span></li>
+                            <li><span>2020</span><br> Grade 10 percentage: 89.2%</li>
+                            <li><span>2022</span><br> Grade 12 percentage: 79.8%</li>
 
-                 
-                
-                </script>
-    
-            
-             </section>
-          
-             <section class="projects" id="projects">
-                <h1 class="projects-title">My Projects</h1>
-    
-                <div class="projects-container" id="project">
-                  <div class="project-container project-card">
-                    <img
-                      src="public\calc.jpeg"
-                      alt="netflic-clone"
-                      loading="lazy"
-                      class="project-pic"
-                    />
-                    <h3 class="project-title">HTML Calculator</h3>
-                    <p class="project-details">
-                      Description: The website performs basic mathemetical calculations. <br>
-                      Created using HTML, CSS, Javascript and Bootstrap framework
-                    </p>
-    
-                    <a href=" https://github.com/VrindaDevadas/Calculator" target="_blank" class="project-link">Click here to check it Out</a>
-                  </div>
-    
-                  <div class="project-container project-card">
-                    <img
-                      src="public\TravelWeb.jpg"
-                      alt="netflic-clone"
-                      loading="lazy"
-                      class="project-pic"
-                    />
-                    <h3 class="project-title">India Travel Website</h3>
-                    <p class="project-details">
-                      Description: The website aims at promoting the cultural diversity of India among the tourists providing them an overview of all the destinations to explore within the country along with the services.<br>
-                      Created using HTML, CSS and Javascript
-    
-                    </p>
-                    <a href="https://github.com/VrindaDevadas/TravelWebsite" target="_blank" class="project-link">Click here to check it Out</a>
-                  </div>
+                            <li><span>VIT Bhopal University</span></li>
+                            <li> CGPA : 7.94 (current)</li>
+                        </ul>
+                    </div>
                 </div>
-             </section>
-             
-              <section class="contact" id="contact">
-                <div class="contact-details"> 
-                    <h1 class="greet-heading">My Contact Details</h1> 
-                    <div class="details"> 
-                        <h5 class="contact-heading">EMAIL</h5> 
-                        <p class="contact-text">vrinda03devadas@gmail.com <br> vrindadevadas2022@vitbhopal.ac.in</p> 
-                    </div> 
-                    <br>
-                    <div class="details"> 
-                        <h5 class="contact-heading">PHONE</h5> 
-                        <p class="contact-text">+91 7011745241</p> 
-                    </div> 
-                    <br>
-                    <div class="details"> 
-                        <h5 class="contact-heading">ADDRESS</h5> 
-                        <p class="contact-text">New Delhi, India</p> 
-                    </div> 
-                </div> 
-            
-                <h2>&copy;   Vrinda Devadas .  All rights reserved</h2>
-            
-              </section>
+                <div class="about-col-2">
+                    <video src="public/mygif.mp4" autoplay loop muted></video>
+                </div>
 
- 
-    </body> 
+            </div>
+        </div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+
+
+        </script>
+
+
+    </section>
+
+    <section class="projects" id="projects">
+        <h1 class="projects-title">My Projects</h1>
+
+        <div class="projects-container" id="project">
+            <div class="project-container project-card">
+                <img src="public\calc.jpeg" alt="netflic-clone" loading="lazy" class="project-pic" />
+                <h3 class="project-title">HTML Calculator</h3>
+                <p class="project-details">
+                    Description: The website performs basic mathemetical calculations. <br>
+                    Created using HTML, CSS, Javascript and Bootstrap framework
+                </p>
+
+                <a href=" https://github.com/VrindaDevadas/Calculator" target="_blank" class="project-link">Click here
+                    to check it Out</a>
+            </div>
+
+            <div class="project-container project-card">
+                <img src="public\HomeDecor.jpg" alt="netflic-clone" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Handmade Home Decor Website</h3>
+                <p class="project-details">
+                    Description: A fully responsive, single-page e-commerce application designed to showcase a fictional
+                    collection of artisanal handmade home decor<br>
+                    Created using React, Css and Figma
+                </p>
+                <a href="https://github.com/VrindaDevadas/HandmadeDecor" target="_blank" class="project-link">Click here
+                    to check it Out</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-details">
+            <h1 class="greet-heading">My Contact Details</h1>
+            <div class="details">
+                <h5 class="contact-heading">EMAIL</h5>
+                <p class="contact-text">vrinda03devadas@gmail.com <br> vrindadevadas2022@vitbhopal.ac.in</p>
+            </div>
+            <br>
+            <div class="details">
+                <h5 class="contact-heading">PHONE</h5>
+                <p class="contact-text">+91 7011745241</p>
+            </div>
+            <br>
+            <div class="details">
+                <h5 class="contact-heading">ADDRESS</h5>
+                <p class="contact-text">New Delhi, India</p>
+            </div>
+        </div>
+
+        <h2>&copy; Vrinda Devadas . All rights reserved</h2>
+
+    </section>
+
+
+</body>
+
 </html>
-        
-
-       
-           
